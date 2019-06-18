@@ -1,0 +1,93 @@
+Feature: Testing my abilities to write right test scenarios for Cucumber framework
+
+  @scenario1
+  Scenario: Becoming rich in a few minutes with Techtorial
+    Given student N has $100 in his pocket
+    When advanced group students each gives $100 to student N
+    And zeroToHero group students each donates $100 more to student N
+    Then student N becomes a rich student
+
+  @scenario2
+  Scenario: Testing ballpoint pen's writing function on bright white paper
+    Given user has ballpoint pen and bright white paper in his hand
+    When user turns up ballpoint pen's tip
+    And user writes using ballpoint pen on bright white paper
+    Then user verifies if ballpoint pen's writing function is properly working on bright white paper
+
+  @scenario3
+  Scenario Outline: Going up with an elevator from ground floor in East Devon Building 2400
+    Given user is on ground floor in front of elevator door
+    When user clicks on elevator call button
+    And user waits for elevator door to open
+    And user enters inside and clicks "<floor>" button
+    Then user goes up to clicked floor and verifies he is on that floor
+    Examples:
+      | floor |
+      | 2     |
+      | 3     |
+
+  @scenario4
+  Scenario Outline: Getting items from vending machine in East Devon Building 2400
+    Given user is on lowest floor in front of vending machine
+    When user provides payment selecting "<paymentOption>"
+    And user selects "<item>" that prefers
+    Then user gets that item and verifies he got the right one
+    Examples:
+      | paymentOption | item |
+      | credit card   | B1   |
+      | debit card    | B2   |
+      | cash          | B3   |
+
+  @scenario5
+  Scenario: Going to school from home
+    Given student is at home getting ready to go to school
+    When student walks out his home to the parking lot
+    And student gets on his car and drives through his school's location
+    And student arrives and parks his car in an empty spot at school's parking lot
+    Then student goes into his school and verifies he is in the right place
+
+  @scenario6
+  Scenario Outline: Watching IT related videos on YouTube website
+    Given user is on YouTube homepage
+    When user provides "<videoName>" he is interested in search box and clicks search button
+    Then user gets list of all videos and with very close names to video he is interested in and verifies it
+    Examples:
+      | videoName |
+      | selenium  |
+      | java      |
+      | python    |
+
+  @scenario7
+  Scenario: Making great coffee at Techtorial
+    Given user has ready water, coffee, coffee machine working and electricity in the building
+    When user puts water in water spot
+    And user puts coffee in coffee spot and turns machine on
+    Then user gets ready fresh coffee and verifies it is great
+
+  @scenario8
+  Scenario Outline: Requesting ride from Uber application
+    Given user is on Uber application main page
+    When user enters location where he needs to go
+    And user selects "<uberType>" for his ride
+    Then user confirms his pick up location and verifies he requested right ride to right arriving place
+    Examples:
+      | uberType    |
+      | expressPool |
+      | pool        |
+      | uberX       |
+      | black       |
+      | uberXL      |
+
+  @scenario9
+  Scenario: Getting ready to be great SDET with Techtorial
+    Given student with willingness to learn and explore IT world
+    When student learns JAVA language and makes a lot of practice on it
+    And student learns all necessary automation tools and makes a lot of practice on them
+    Then student becomes educated and verifies he is ready to become great SDET
+
+  @scenario10
+  Scenario: Refueling car at the gas station
+    Given user is at the gas station in front of gas pump
+    When user selects and provides payment and confirms it is approved
+    And user takes a gun and fills up his tank
+    Then user verifies his tank is full and payment is proper
